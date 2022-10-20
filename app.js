@@ -4,7 +4,7 @@ const authRoutes = require("./routes/authRoutes");
 const cookieParser = require("cookie-parser");
 const { requireAuth, checkUser } = require('./middleware/authMiddleware');
 //environment variables
-require('dotenv').config()
+require('dotenv').config();
 console.log(process.env) // remove this after you've confirmed it is working
 
 const app = express();
